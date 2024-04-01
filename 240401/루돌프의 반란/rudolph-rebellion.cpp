@@ -26,7 +26,7 @@ void input(){
     cin >> ru.first >> ru.second; // 루돌프 초기위치
     board[ru.first][ru.second] = -1; // 루돌프는 -1로 표시
 
-    while(P--){
+    for(int i=0;i<P;i++){
         int p;
         cin >> p; // 산타번호
         cin >> santa[p].first >> santa[p].second; // 산타 초기위치
@@ -187,7 +187,7 @@ void pro(){
                     int last_r = first_r;
                     int last_c = first_c;
 
-                    if(D == 1){
+                    if(D == 1){ // ??
                         scores[i] += D;
                     }
                     else{ // 만약 이동한 위치에도 산타가 있다면, 연쇄적으로 충돌
