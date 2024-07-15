@@ -53,7 +53,7 @@ void pro(){
         }
     }
 
-    cout << town_cnt << "\n";
+    cout << people_cnt.size() << "\n";
     while(!people_cnt.empty()){
         cout << -people_cnt.top() << "\n";
         people_cnt.pop();
